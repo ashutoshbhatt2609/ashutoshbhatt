@@ -1,0 +1,168 @@
+/* =====================================
+   APP LAYOUT — Sawad Bento Grid
+   ===================================== */
+
+.app {
+  min-height: 100vh;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    flex-direction: row;
+    padding: 60px 40px 40px;
+    gap: 80px;
+  }
+}
+
+/* Sidebar — sticky profile card */
+.sidebar {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 330px;
+    position: sticky;
+    top: 80px; /* Sticks after moving up slightly from the 160px layout padding */
+    align-self: flex-start;
+    height: fit-content;
+  }
+}
+
+/* Main scrollable content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+/* =====================================
+   SHARED CARD STYLES
+   ===================================== */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  transition: var(--transition);
+}
+
+.card:hover {
+  border-color: var(--border-light);
+}
+
+/* =====================================
+   SECTION HEADINGS — Dual style
+   ===================================== */
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.section-heading .solid {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.section-heading .outline {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-secondary);
+  letter-spacing: -0.5px;
+}
+
+/* =====================================
+   MASSIVE HEADINGS — Sawad Style
+   ===================================== */
+.massive-heading {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.85;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+
+.heading-solid {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: #FFF;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heading-dark {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: #222;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* =====================================
+   UTILITY
+   ===================================== */
+
+.accent-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #FFF;
+  font-size: 0.85rem;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.accent-arrow:hover {
+  background: var(--accent-hover);
+  transform: scale(1.1);
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 92, 58, 0.1);
+  color: var(--accent);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.tag-lime {
+  background: rgba(198, 255, 0, 0.1);
+  color: var(--lime);
+}
+
+.borderless-section {
+  padding: 40px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+}

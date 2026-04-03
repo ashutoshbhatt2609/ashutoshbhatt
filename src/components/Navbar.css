@@ -1,0 +1,68 @@
+.navbar {
+  position: relative;
+  margin: 40px auto 0; /* Starts 40px down initially, visually centered */
+  width: fit-content;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.navbar-pill {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Reduced gap slightly since no box exists */
+}
+
+.nav-link-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  border-radius: 8px; /* Assuming default rounded squares based on user's first design */
+}
+
+.nav-link-icon:hover {
+  color: #FFF;
+}
+
+.nav-link-icon.active {
+  color: #FFF;
+}
+
+.nav-tooltip {
+  position: absolute;
+  top: calc(100% + 12px); /* spacing below the navbar icon */
+  left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+  background-color: rgba(45, 45, 45, 0.95);
+  color: #FFF;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav-link-icon:hover .nav-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.active-cloud {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130%;
+  height: 110%;
+  z-index: 1;
+  pointer-events: none;
+}

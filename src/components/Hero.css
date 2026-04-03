@@ -1,0 +1,143 @@
+.hero {
+  padding: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  line-height: 0.95;
+}
+
+.hero-title-top {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.hero-title-bottom {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  color: #2A2A2A;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin: 0;
+  margin-top: -2px;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: #888888;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.status-badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 16px;
+  border-radius: 50px;
+  width: fit-content;
+  backdrop-filter: blur(8px);
+}
+
+.status-dot-wrap {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--lime);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.status-dot-ping {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--lime);
+  border-radius: 50%;
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  z-index: 1;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+.status-text {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 32px;
+  justify-content: start;
+}
+
+.stat-item h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.stat-item p {
+  font-size: 0.8rem;
+  color: #888888;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 32px 24px;
+  }
+  .hero-stats {
+    gap: 20px;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+}

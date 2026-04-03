@@ -1,0 +1,114 @@
+.contact-card {
+  padding: 48px 36px;
+}
+
+.contact-heading h2 {
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.contact-heading .solid,
+.contact-heading .outline {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.contact-heading .solid {
+  color: var(--text-primary);
+}
+
+.contact-heading .outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-secondary);
+}
+
+.contact-sub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--transition);
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 92, 58, 0.03);
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: var(--accent);
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: var(--transition);
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.submit-btn .accent-arrow {
+  background: rgba(255,255,255,0.2);
+}
