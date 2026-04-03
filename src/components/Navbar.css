@@ -1,9 +1,39 @@
 .navbar {
   position: relative;
-  margin: 40px auto 0; /* Starts 40px down initially, visually centered */
+  margin: 40px auto 0;
   width: fit-content;
   z-index: 1000;
   transition: var(--transition);
+}
+
+/* Mobile: fixed bottom nav bar */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    margin: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 10px 0;
+  }
+  .navbar-pill {
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .nav-link-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .nav-tooltip {
+    display: none;
+  }
 }
 
 .navbar-pill {

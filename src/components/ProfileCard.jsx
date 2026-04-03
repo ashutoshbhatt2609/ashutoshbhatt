@@ -4,10 +4,6 @@ import './ProfileCard.css';
 const ProfileCard = () => {
   return (
     <div className="profile-card">
-      <div className="profile-logo-wrapper">
-        <img src="/logo.png" alt="Brand Logo" className="personal-logo" />
-      </div>
-
       <div className="profile-top-decor">
         {/* Top left dotted circle decoration */}
         <svg viewBox="0 0 100 100" className="decor-circle">

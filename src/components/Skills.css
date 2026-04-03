@@ -56,9 +56,31 @@
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .tool-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+  .tool-img-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .tool-name {
+    font-size: 1rem;
+  }
+  .tool-desc {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
   .tools-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 16px;
   }
 }

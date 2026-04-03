@@ -128,7 +128,22 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 32px 24px;
+    padding: 16px 0;
+  }
+  .hero-description {
+    font-size: 0.92rem;
+    margin-bottom: 20px;
+  }
+  .status-badges-container {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .status-badge {
+    padding: 6px 14px;
+  }
+  .status-text {
+    font-size: 0.82rem;
   }
   .hero-stats {
     gap: 20px;

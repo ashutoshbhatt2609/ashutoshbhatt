@@ -273,3 +273,29 @@
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .exp-row {
+    margin-left: 0;
+    padding: 12px;
+    gap: 14px;
+  }
+  .exp-role {
+    font-size: 1rem;
+  }
+  .exp-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .exp-hover-indicator {
+    display: none;
+  }
+  .exp-modal {
+    max-width: 100%;
+    margin: 0 8px;
+    border-radius: var(--radius-md);
+  }
+  .exp-modal-image {
+    height: 180px;
+  }
+}

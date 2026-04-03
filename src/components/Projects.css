@@ -95,14 +95,16 @@
 }
 
 @media (max-width: 768px) {
+  .projects-list-minimal {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
   .project-title {
     font-size: 1.5rem;
   }
-  
   .project-subtitle {
     font-size: 0.9rem;
   }
-  
   .project-arrow svg {
     width: 24px;
     height: 24px;

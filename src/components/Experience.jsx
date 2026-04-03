@@ -11,40 +11,40 @@ const Experience = () => {
       org: "Rotaract Club of BMS Yelahanka",
       period: "Jun 2025 — Present",
       type: "Full-time",
-      description: "Leading media strategy and public relations for college events and social initiatives across Karnataka.",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
-      insta: "https://instagram.com",
-      linkedin: "https://linkedin.com"
+      description: "Leading media strategy and public relations for college events and social initiatives across Karnataka. Responsible for managing all visual content, coordinating photography/videography for club events, and maintaining the club's digital presence across social platforms.",
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+      insta: "https://www.instagram.com/racbmsy/",
+      linkedin: "https://www.linkedin.com/company/rotaract-club-of-bms-yelahanka/"
     },
     {
       role: "Content Writer",
       org: "Entrepreneurship Cell, BMSIT&M",
       period: "Jun 2025 — Present",
       type: "Full-time",
-      description: "Crafting compelling content for startup events, newsletters, and the E-Cell brand across digital platforms.",
-      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
-      insta: "https://instagram.com",
-      linkedin: "https://linkedin.com"
+      description: "Crafting compelling content for startup events, newsletters, and the E-Cell brand across digital platforms. Writing event summaries, social media captions, and promotional copy for hackathons, expert talks, and innovation workshops organized by EDC BMSIT.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
+      insta: "https://www.instagram.com/edc_bmsit/",
+      linkedin: "https://www.linkedin.com/company/edc-bmsit/"
     },
     {
       role: "Marketing Team",
       org: "Literary Society, BMSIT&M",
       period: "Apr 2025 — Present",
       type: "Full-time",
-      description: "Designing promotional campaigns and social media strategies for literary events and workshops.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
-      insta: "https://instagram.com",
-      linkedin: "https://linkedin.com"
+      description: "Designing promotional campaigns and social media strategies for literary events and workshops. Creating engaging visual content, managing event outreach, and driving participation for debates, poetry slams, and writing competitions across the BMSIT campus.",
+      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
+      insta: "https://www.instagram.com/literarysociety_bmsit/",
+      linkedin: "https://www.linkedin.com/school/bms-institute-of-technology-and-management/"
     },
     {
       role: "Marketing Team Member",
       org: "Institution's Innovation Council, BMSIT&M",
       period: "Oct 2024 — Apr 2025",
       type: "Full-time · On-site",
-      description: "Promoted innovation events, hackathons, and IIC-backed initiatives across the Bangalore campus.",
+      description: "Promoted innovation events, hackathons, and IIC-backed initiatives across the Bangalore campus. Helped drive student registrations for national-level innovation challenges, ideathons, and workshops conducted under the Ministry of Education's Innovation Cell framework.",
       image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800",
-      insta: "https://instagram.com",
-      linkedin: "https://linkedin.com"
+      insta: "https://www.instagram.com/iic_bmsit/",
+      linkedin: "https://www.linkedin.com/school/bms-institute-of-technology-and-management/"
     }
   ];
 
