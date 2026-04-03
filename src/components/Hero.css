@@ -13,7 +13,7 @@
 
 .hero-title-top {
   font-family: var(--font-heading);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 10vw, 6rem);
   font-weight: 900;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 
 .hero-title-bottom {
   font-family: var(--font-heading);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 10vw, 6rem);
   font-weight: 900;
   color: #2A2A2A;
   text-transform: uppercase;
@@ -110,7 +110,7 @@
 
 .stat-item h2 {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 8px;

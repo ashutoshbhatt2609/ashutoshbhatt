@@ -113,7 +113,7 @@
 
 .heading-solid {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(1.8rem, 8vw, 4.5rem);
   font-weight: 800;
   color: #FFF;
   text-transform: uppercase;
@@ -122,7 +122,7 @@
 
 .heading-dark {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(1.8rem, 8vw, 4.5rem);
   font-weight: 800;
   color: #222;
   text-transform: uppercase;
